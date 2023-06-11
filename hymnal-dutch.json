@@ -7,8 +7,8 @@
   "hymns": [
     {
       "num": "1",
-      "title": "Before Jehovahâ€™s Awful Throne",
-      "topic": "Adoration",
+      "title": "Prijs de Heer met blijde galmen",
+      "topic": "Ere- en Lofzangen",
       "stanzas": {
         "verses": [
           [
@@ -21,66 +21,166 @@
             "Hem verhogen in mijn lied."
           ],
           [
-            "His sovereign power, without our aid,",
-            "Made us of clay, and formed us men;",
-            "And when like wandering sheep we strayed,",
-            "He brought us to His fold again."
+            "Zalig hij, die in dit leven",
+            "Jakobs God ter hulpe heeft;",
+            "Hij die door de nood gedreven,",
+            "zich tot Hem om troost begeeft;",
+            "Die zijn hoop in 't hach'lijkst lot",
+            "vestigt op de Heer, zijn God,",
+            "vestigt op de Heer, zijn God."
           ],
           [
-            "Weâ€™ll crowd His gates with thankful songs,",
-            "High as the heavens our voices raise;",
-            "And earth, with her ten thousand tongues,",
-            "Shall fill His courts with sounding praise."
+            "Zalig hij, die in dit leven",
+            "Jakobs God ter hulpe heeft;",
+            "Hij die door de nood gedreven,",
+            "zich tot Hem om troost begeeft;",
+            "Die zijn hoop in 't hach'lijkst lot",
+            "vestigt op de Heer, zijn God,",
+            "vestigt op de Heer, zijn God."
           ],
           [
-            "Wide as the world is His command,",
-            "Vast as Eternity His love;",
-            "Firm as a rock His truth shall stand,",
-            "When rolling years shall cease to move."
+            "'t Is de Heer, wiens alvermogen",
+            "'t groot heelal heeft voortgebracht;",
+            "Die, genadig uit de hoge",
+            "ziet, wie op Zijn bijstand wacht,",
+            "en aan elk, die Hem verbeidt,",
+            "trouwe houdt in eeuwigheid,",
+            "trouwe houdt in eeuwigheid."
+          ],
+          [
+            "'t Is de Heer, die 't recht der armen,",
+            "der verdrukten gelden doet;",
+            "Die, uit liefderijk erbarmen,",
+            "hongerigen mildlijk voedt;",
+            "Die gevang'nen vrijheid schenkt,",
+            "en aan hun ellende denkt,",
+            "en aan hun ellende denkt."
+          ],
+          [
+            "'t Is de Heer van alle heren,",
+            "Zions God, geducht in macht,",
+            "die voor eeuwig zal regeren,",
+            "van geslachte tot geslacht.",
+            "Zion! zing uw God ter eer;",
+            "prijs zijn grootheid, loof de Heer!",
+            "Prijs zijn grootheid, loof de Heer!"
           ]
         ],
         "refrain": []
       }
     },
-    {
-      "num": "2",
-      "title": "We Praise Thee, O God",
-      "topic": "Praise",
-      "stanzas": {
-        "verses": [
-          [
-            "We praise Thee, O God,",
-            "for the Son of Thy love,",
-            "For Jesus who died and",
-            "is now gone above."
+    [
+      {
+        "num": "2",
+        "title": "Grote God, U loven wij",
+        "topic": "Ere- en Lofzangen",
+        "stanzas": {
+          "verses": [
+            [
+              "Grote God, U loven wij",
+              "Heer, wij prijzen Uwe sterkte.",
+              "D' aard' aanbidt Uw heerschappij",
+              "om de wond'ren die Gij werkte.",
+              "Voor de wording van de tijd.",
+              "Waart Gij, die Gij eeuwig zijt."
+            ],
+            [
+              "Wereldschepper, eind'loos groot!",
+              "Heilig' Heer der legerscharen,",
+              "sterke Helper in de nood!",
+              "Hemel, aarde, lucht en baren",
+              "prijzen Uwe macht alom;",
+              "alles is Uw eigendom."
+            ],
+            [
+              "Zie Uw volk genadig aan!",
+              "Heer, doe ons Uw gunst verwerven!",
+              "Breng ons op de rechte baan,",
+              "Laat geen vijand ons verderven!",
+              "Voer door boete en geween",
+              "ons ten zaal'gen Hemel heen!"
+            ],
+            [
+              "Heer, wees Gij ons zondaars goed!",
+              "Schenk Uw bijstand ons, Uw zegen!",
+              "Leid ons als een vader doet,",
+              "aan uw hand langs al Uw wegen!",
+              "Zie ons d'ogen op U slaan!",
+              "Laat ons niet verloren gaan!"
+            ]
           ],
-          [
-            "We praise Thee, O God,",
-            "for Thy Spirit of light,",
-            "Who has shown us our Saviour,",
-            "and scattered our night."
+          "refrain": []
+        }
+      },
+      {
+        "num": "3",
+        "title": "Buigt, volken, voor Jehova's troon",
+        "topic": "Ere- en Lofzangen",
+        "stanzas": {
+          "verses": [
+            [
+              "Buigt, volken, voor Jehova's troon",
+              "u neer met dankbaar eerbetoon;",
+              "Hij is uw God, en Hij alleen",
+              "de hoorder van uw smeekgebeên."
+            ],
+            [
+              "Zijn scheppingsmacht heeft ons gewrocht,",
+              "Zijn liefd' altoos ons hart gezocht,",
+              "gezocht van Edens misdrijf af,",
+              "tot toen voor ons Zijn Zoon Hij gaf."
+            ],
+            [
+              "Zijn troostwoord bij die eerste schuld",
+              "is voor 't geloof aan 't kruis vervuld,",
+              "en eens maakt der geredden schaar,",
+              "ontelbaar dan, Zijn heilswoord waar."
+            ],
+            [
+              "Getrouwe God, tot 's aardrijks end",
+              "wordt reeds Uw levenswoord gekend,",
+              "en haast looft aard' en hemel saâm",
+              "Uw oppermacht en vadernaam."
+            ]
           ],
-          [
-            "All glory and praise",
-            "to the Lamb that was slain,",
-            "Who has borne all our sins,",
-            "and has cleansed every stain."
+          "refrain": []
+        }
+      },
+      {
+        "num": "4",
+        "title": "Ontwaak, mijn hart, mijn tong, hef aan",
+        "topic": "Ere- en Lofzangen",
+        "stanzas": {
+          "verses": [
+            [
+              "Ontwaak, mijn hart, mijn tong, hef aan,",
+              "zing God' een dankbaar lied;",
+              "de Heer heeft bij mij wel gedaan,",
+              "mij is genâ geschied."
+            ],
+            [
+              "Zijn goedheid heeft mij vreugd verwekt;",
+              "'k was gans onrein en naakt",
+              "Zijn liefde heeft mijn schuld bedekt,",
+              "mij weer zijn kind gemaakt."
+            ],
+            [
+              "Juicht, heilsgenoten, met mij mee,",
+              "en roemt in Christus' kruis;",
+              "Zijn offer schenkt ons hart zijn vree,",
+              "en deel in 't Vaderhuis."
+            ],
+            [
+              "Ons Halleluja juub'le blij,",
+              "tot eer van Gods genâ;",
+              "in Jezus zijn wij rein en vrij;",
+              "looft God, halleluja."
+            ]
           ],
-          [
-            "Revive us again,",
-            "fill each heart with Thy love;",
-            "May each soul be rekindled",
-            "with fire from above."
-          ]
-        ],
-        "refrain": [
-          "Hallelujah! Thine the glory,",
-          "Hallelujah! Amen,",
-          "Hallelujah! Thine the glory,",
-          "Revive us again."
-        ]
+          "refrain": []
+        }
       }
-    }
+    ]
   ],
   "topics": [
     {
