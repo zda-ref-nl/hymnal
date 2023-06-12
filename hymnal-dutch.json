@@ -70,50 +70,48 @@
         "refrain": []
       }
     },
-    [
-      {
-        "num": "2",
-        "title": "Grote God, U loven wij",
-        "topic": "Ere- en Lofzangen",
-        "stanzas": {
-          "verses": [
-            [
-              "Grote God, U loven wij",
-              "Heer, wij prijzen Uwe sterkte.",
-              "D' aard' aanbidt Uw heerschappij",
-              "om de wond'ren die Gij werkte.",
-              "Voor de wording van de tijd.",
-              "Waart Gij, die Gij eeuwig zijt."
-            ],
-            [
-              "Wereldschepper, eind'loos groot!",
-              "Heilig' Heer der legerscharen,",
-              "sterke Helper in de nood!",
-              "Hemel, aarde, lucht en baren",
-              "prijzen Uwe macht alom;",
-              "alles is Uw eigendom."
-            ],
-            [
-              "Zie Uw volk genadig aan!",
-              "Heer, doe ons Uw gunst verwerven!",
-              "Breng ons op de rechte baan,",
-              "Laat geen vijand ons verderven!",
-              "Voer door boete en geween",
-              "ons ten zaal'gen Hemel heen!"
-            ],
-            [
-              "Heer, wees Gij ons zondaars goed!",
-              "Schenk Uw bijstand ons, Uw zegen!",
-              "Leid ons als een vader doet,",
-              "aan uw hand langs al Uw wegen!",
-              "Zie ons d'ogen op U slaan!",
-              "Laat ons niet verloren gaan!"
-            ]
+    {
+      "num": "2",
+      "title": "Grote God, U loven wij",
+      "topic": "Ere- en Lofzangen",
+      "stanzas": {
+        "verses": [
+          [
+            "Grote God, U loven wij",
+            "Heer, wij prijzen Uwe sterkte.",
+            "D' aard' aanbidt Uw heerschappij",
+            "om de wond'ren die Gij werkte.",
+            "Voor de wording van de tijd.",
+            "Waart Gij, die Gij eeuwig zijt."
           ],
-          "refrain": []
-        }
+          [
+            "Wereldschepper, eind'loos groot!",
+            "Heilig' Heer der legerscharen,",
+            "sterke Helper in de nood!",
+            "Hemel, aarde, lucht en baren",
+            "prijzen Uwe macht alom;",
+            "alles is Uw eigendom."
+          ],
+          [
+            "Zie Uw volk genadig aan!",
+            "Heer, doe ons Uw gunst verwerven!",
+            "Breng ons op de rechte baan,",
+            "Laat geen vijand ons verderven!",
+            "Voer door boete en geween",
+            "ons ten zaal'gen Hemel heen!"
+          ],
+          [
+            "Heer, wees Gij ons zondaars goed!",
+            "Schenk Uw bijstand ons, Uw zegen!",
+            "Leid ons als een vader doet,",
+            "aan uw hand langs al Uw wegen!",
+            "Zie ons d'ogen op U slaan!",
+            "Laat ons niet verloren gaan!"
+          ]
+        ],
+        "refrain": []
       }
-    ]
+    }
   ],
   "topics": [
     {
