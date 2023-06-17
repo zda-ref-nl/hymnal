@@ -14,11 +14,10 @@ def convert_txt_to_json(txt_path):
     for song in songs:
         lines = song.splitlines()
 
-        # Zoek het liednummer en de titel op basis van de eerste regel
-        header = lines[0].strip().split(maxsplit=1)
-        if len(header) >= 2:
-            num = header[0]
-            title = header[1]
+        # Houd het nummer en de titel vast voordat je het uit de lijnen verwijdert
+        if len(lines) >= 1:
+            num = lines[0].strip()
+            title = lines[0].strip()[len(num):].strip()
         else:
             num = ""
             title = ""
