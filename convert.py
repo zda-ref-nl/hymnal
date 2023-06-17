@@ -27,11 +27,23 @@ def convert_txt_to_json(txt_path):
         lines = lines[1:]
 
         # Voeg het lied toe aan de lijst van liederen
+        stanzas = []
+        current_stanza = []
+        for line in lines:
+            if line.strip():
+                current_stanza.append(line.strip())
+            else:
+                if current_stanza:
+                    stanzas.append(current_stanza)
+                    current_stanza = []
+        if current_stanza:
+            stanzas.append(current_stanza)
+
         hymns.append({
             "num": num,
             "title": title,
             "stanzas": {
-                "verses": [stanza.splitlines() for stanza in lines],
+                "verses": stanzas,
                 "refrain": []
             }
         })
@@ -54,20 +66,15 @@ def convert_txt_to_json(txt_path):
         ]
     }
 
-    # Converteer het data-object naar JSON
-    json_output = json.dumps(data, indent=4, ensure_ascii=False)
+    return data
 
-    return json_output
+def export_json_to_file(json_data, output_file):
+    with open(output_file, "w", encoding="utf-8") as file:
+        json.dump(json_data, file, indent=4, ensure_ascii=False)
 
 # Geef het pad naar het tekstbestand op
 txt_path = "hymnal.txt"
 
-# Converteer het tekstbestand naar JSON
-json_output = convert_txt_to_json(txt_path)
-
-def export_json_to_file(json_data, output_file):
-    with open(output_file, "w", encoding="utf-8") as file:
-        file.write(json_data)
 # Converteer het tekstbestand naar JSON
 json_output = convert_txt_to_json(txt_path)
 
