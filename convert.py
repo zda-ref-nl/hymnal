@@ -16,15 +16,11 @@ def convert_txt_to_json(txt_path):
         lines = song.splitlines()
 
         # Zoek het liednummer en de titel op basis van de eerste regel
-        header = lines[0].strip().split(maxsplit=1)
-        if len(header) >= 2:
-            num = header[0]
-            title = header[1]
-        else:
-            num = ""
-            title = ""
-
-        # Verwijder het nummer en de titel uit de lijnen
+        num_match = re.search(r"\bLIED\s+(\d+)", lines[0], re.IGNORECASE)
+        num = num_match.group(1) if num_match else ""
+        num = re.sub(r"\bLIED\s+\d+", "", lines[0], flags=re.IGNORECASE).strip()
+        title = ""
+        # Verwijder het nummer uit de lijnen
         lines = lines[1:]
 
         # Splits de versen op basis van dubbele linebreaks
@@ -91,4 +87,5 @@ json_output = convert_txt_to_json(txt_path)
 output_file = "hymnal.json"
 
 # Exporteer de JSON-gegevens naar een bestand
+
 export_json_to_file(json_output, output_file)
