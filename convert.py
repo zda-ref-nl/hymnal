@@ -1,4 +1,5 @@
 import json
+import re
 
 def convert_txt_to_json(txt_path):
     with open(txt_path, "r", encoding="utf-8") as file:
@@ -14,10 +15,11 @@ def convert_txt_to_json(txt_path):
     for song in songs:
         lines = song.splitlines()
 
-        # Houd het nummer en de titel vast voordat je het uit de lijnen verwijdert
-        if len(lines) >= 1:
-            num = lines[0].strip()
-            title = lines[0].strip()[len(num):].strip()
+        # Zoek het liednummer en de titel op basis van de eerste regel
+        header = lines[0].strip().split(maxsplit=1)
+        if len(header) >= 2:
+            num = header[0]
+            title = header[1]
         else:
             num = ""
             title = ""
@@ -25,27 +27,35 @@ def convert_txt_to_json(txt_path):
         # Verwijder het nummer en de titel uit de lijnen
         lines = lines[1:]
 
-        # Voeg het lied toe aan de lijst van liederen
-        stanzas = []
-        current_stanza = []
+        # Splits de versen op basis van dubbele linebreaks
+        verse_lines = []
+        current_verse = []
         for line in lines:
-            if line.strip():
-                current_stanza.append(line.strip())
+            if line.strip() == "":
+                # Dubbele linebreak gevonden, voeg het huidige vers toe aan de lijst
+                if current_verse:
+                    verse_lines.append(current_verse)
+                    current_verse = []
             else:
-                if current_stanza:
-                    stanzas.append(current_stanza)
-                    current_stanza = []
-        if current_stanza:
-            stanzas.append(current_stanza)
+                # Voeg de regel toe aan het huidige vers, tenzij deze een genummerde string bevat
+                if not re.match(r"\d+\.", line):
+                    current_verse.append(line)
 
-        hymns.append({
+        # Voeg het laatste vers toe aan de lijst
+        if current_verse:
+            verse_lines.append(current_verse)
+
+        # Bouw het lied op
+        hymn = {
             "num": num,
             "title": title,
             "stanzas": {
-                "verses": stanzas,
+                "verses": verse_lines,
                 "refrain": []
             }
-        })
+        }
+
+        hymns.append(hymn)
 
     # Bouw het JSON-object op
     data = {
@@ -59,8 +69,8 @@ def convert_txt_to_json(txt_path):
         "topics": [
             {
                 "name": "Ere- en Lofzangen",
-                "start": "1",
-                "end": str(len(hymns))
+                "start": hymns[0]["num"],
+                "end": hymns[-1]["num"]
             }
         ]
     }
