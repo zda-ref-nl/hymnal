@@ -5,6 +5,9 @@ def convert_txt_to_json(txt_path):
     with open(txt_path, "r", encoding="utf-8") as file:
         content = file.read()
 
+    # Verwijder regels die "(vervolg)" bevatten
+    content = re.sub(r"\n.*\(vervolg\)", "", content)
+
     # Split de tekst in liederen op basis van de "LIED" headers
     songs = content.split("LIED")
 
@@ -20,6 +23,7 @@ def convert_txt_to_json(txt_path):
         num = num_match.group(1) if num_match else ""
         num = re.sub(r"\bLIED\s+\d+", "", lines[0], flags=re.IGNORECASE).strip()
         title = ""
+
         # Verwijder het nummer uit de lijnen
         lines = lines[1:]
 
@@ -50,7 +54,6 @@ def convert_txt_to_json(txt_path):
                 "refrain": []
             }
         }
-
         hymns.append(hymn)
 
     # Bouw het JSON-object op
@@ -87,5 +90,4 @@ json_output = convert_txt_to_json(txt_path)
 output_file = "hymnal.json"
 
 # Exporteer de JSON-gegevens naar een bestand
-
 export_json_to_file(json_output, output_file)
